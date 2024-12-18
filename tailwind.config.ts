@@ -170,8 +170,20 @@ export default {
 
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#3DCBB1",
+        secondary: "#FFD130",
+        shade40: "#EC9792",
+        shade60: "#E56D67",
+        shade80: "#C42A22",
+        shade: "#98211A",
+        black90: "#1B1B1BE5",
+        black60: "#1B1B1B99",
+        black30: "#1B1B1B1A",
+        white90: "#F9F9F9E5",
+        white60: "#F9F9F999",
+        error: "#FE416D",
+        warning: "#A04AE3",
+        success: "#00DDC0",
       },
     },
   },
