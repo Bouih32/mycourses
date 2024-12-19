@@ -12,154 +12,154 @@ export default {
     },
 
     fontSize: {
-      tiny: [
+      "6sm": [
         "6px",
         {
           lineHeight: "9px",
           fontWeight: "400",
         },
       ],
-      tinyBold: [
+      "6lg": [
         "6px",
         {
           lineHeight: "8px",
           fontWeight: "700",
         },
       ],
-      extraSmall: [
+      "8sm": [
         "8px",
         {
           lineHeight: "12px",
           fontWeight: "400",
         },
       ],
-      extraSmallBold: [
+      "8lg": [
         "8px",
         {
           lineHeight: "10px",
           fontWeight: "700",
         },
       ],
-      small: [
+      "10sm": [
         "10px",
         {
           lineHeight: "15px",
           fontWeight: "400",
         },
       ],
-      smallBold: [
+      "10lg": [
         "10px",
         {
           lineHeight: "14px",
           fontWeight: "700",
         },
       ],
-      mediumSmall: [
+      "14sm": [
         "14px",
         {
           lineHeight: "18px",
           fontWeight: "400",
         },
       ],
-      mediumSmallBold: [
+      "12lg": [
         "12px",
         {
           lineHeight: "16px",
           fontWeight: "700",
         },
       ],
-      medium: [
+      "16sm": [
         "16px",
         {
           lineHeight: "24px",
           fontWeight: "400",
         },
       ],
-      mediumBold: [
+      "16lg": [
         "16px",
         {
           lineHeight: "21px",
           fontWeight: "700",
         },
       ],
-      mediumLarge: [
+      "20sm": [
         "20px",
         {
           lineHeight: "30px",
           fontWeight: "400",
         },
       ],
-      mediumLargeBold: [
+      "20lg": [
         "20px",
         {
           lineHeight: "26px",
           fontWeight: "700",
         },
       ],
-      large: [
+      "24sm": [
         "24px",
         {
           lineHeight: "36px",
           fontWeight: "400",
         },
       ],
-      largeBold: [
+      "24lg": [
         "24px",
         {
           lineHeight: "31px",
           fontWeight: "700",
         },
       ],
-      extraLarge: [
+      "32sm": [
         "32px",
         {
           lineHeight: "48px",
           fontWeight: "400",
         },
       ],
-      extraLargeBold: [
+      "32lg": [
         "32px",
         {
           lineHeight: "42px",
           fontWeight: "700",
         },
       ],
-      veryLarge: [
+      "40sm": [
         "40px",
         {
           lineHeight: "60px",
           fontWeight: "400",
         },
       ],
-      veryLargeBold: [
+      "40lg": [
         "40px",
         {
           lineHeight: "52px",
           fontWeight: "700",
         },
       ],
-      huge: [
+      "48sm": [
         "48px",
         {
           lineHeight: "72px",
           fontWeight: "400",
         },
       ],
-      hugeBold: [
+      "48lg": [
         "48px",
         {
           lineHeight: "62px",
           fontWeight: "700",
         },
       ],
-      giant: [
+      "61sm": [
         "61px",
         {
           lineHeight: "92px",
           fontWeight: "400",
         },
       ],
-      giantBold: [
+      "61lg": [
         "61px",
         {
           lineHeight: "79px",

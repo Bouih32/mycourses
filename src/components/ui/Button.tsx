@@ -1,4 +1,5 @@
-import clsx from "clsx";
+import { cn } from "@/libs/utils";
+
 import { ReactNode } from "react";
 
 type ButtonProps = {
@@ -9,14 +10,15 @@ type ButtonProps = {
 
 export default function Button({ children, test, test1 }: ButtonProps) {
   console.log(
-    clsx(" text-primary", { "text-large": test, "text-medium": test1 }),
+    cn(" text-primary text-40sm", test && "text-12lg", test1 && "text-24sm"),
   );
   return (
     <div
-      className={clsx("text-primary", {
-        "text-large": test,
-        "text-mediumBold": test1,
-      })}
+      className={cn(
+        "text-6sm text-primary",
+        test && "text-32lg",
+        test1 && "text-24lg",
+      )}
     >
       {children}
     </div>
