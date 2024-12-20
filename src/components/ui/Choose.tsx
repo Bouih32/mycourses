@@ -15,7 +15,7 @@ export default function Choose({ children, small, status }: ChooseType) {
         {
           "text-12sm rounded-[10px] px-2 py-1": small,
           "border-primary text-primary": status === "active",
-          "border-[#454849] bg-[#454849]/10 text-[#454849]":
+          "pointer-events-none border-[#454849] bg-[#454849]/10 text-[#454849]":
             status === "disabled",
         },
       )}

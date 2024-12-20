@@ -188,6 +188,7 @@ export default {
         black30: "#1B1B1B1A",
         white90: "#F9F9F9E5",
         white60: "#F9F9F999",
+        white30: "#F9F9F94D",
         error: "#FE416D",
         warning: "#A04AE3",
         success: "#00DDC0",

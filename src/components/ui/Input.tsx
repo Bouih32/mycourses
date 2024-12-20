@@ -35,6 +35,7 @@ export default function Input({
               "placeholder:text-black90": placeholder,
               "text-black30 placeholder:text-black30": disabled,
             })}
+            disabled={disabled}
           />
           <MdTimelapse className="text-black30" />
         </div>
