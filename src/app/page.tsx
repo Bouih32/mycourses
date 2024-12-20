@@ -1,17 +1,15 @@
-import Button from "@/components/ui/Button";
+import Input from "@/components/ui/Input";
 
 export default function Home() {
   return (
-    <div className="space-y-4">
-      <Button icon status="disabled">
-        Hello
-      </Button>
-      <Button size="small" icon>
-        Hello
-      </Button>
-      <Button size="large" icon status="enabled">
-        Hello
-      </Button>
+    <div className="grid h-screen place-content-center space-y-20">
+      <Input label="something" placeholder="placeholder" disabled />
+      <Input label="placeholder label" disabled />
+      <Input
+        label="something"
+        placeholder="placeholder"
+        error="Error message here!"
+      />
     </div>
   );
 }
