@@ -1,26 +1,30 @@
 import { cn } from "@/libs/utils";
-
 import { ReactNode } from "react";
+import { MdTimelapse } from "react-icons/md";
 
 type ButtonProps = {
-  children: ReactNode;
-  test?: boolean;
-  test1?: boolean;
+  children?: ReactNode;
+  size?: "large" | "small";
+  icon?: boolean;
+  status?: "enabled" | "disabled";
 };
 
-export default function Button({ children, test, test1 }: ButtonProps) {
-  console.log(
-    cn(" text-primary text-40sm", test && "text-12lg", test1 && "text-24sm"),
-  );
+export default function Button({ children, icon, size, status }: ButtonProps) {
   return (
-    <div
+    <button
       className={cn(
-        "text-6sm text-primary",
-        test && "text-32lg",
-        test1 && "text-24lg",
+        "flex items-center gap-2 rounded-[14px] bg-primary px-[18px] py-2.5 text-16lg text-white hover:bg-shade80",
+        {
+          "rounded-[18px] px-6 py-3 text-20lg": size === "large",
+          "rounded-xl px-4 py-2 text-12lg": size === "small",
+          "border border-black60 bg-white text-black60 hover:bg-white":
+            status === "enabled",
+          "bg-black30 text-black30 hover:bg-black30": status === "disabled",
+        },
       )}
     >
+      {icon && <MdTimelapse />}
       {children}
-    </div>
+    </button>
   );
 }

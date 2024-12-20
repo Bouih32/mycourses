@@ -2,10 +2,16 @@ import Button from "@/components/ui/Button";
 
 export default function Home() {
   return (
-    <>
-      <Button>Hello</Button>
-      <Button test>Hello</Button>
-      <Button test1>Hello</Button>
-    </>
+    <div className="space-y-4">
+      <Button icon status="disabled">
+        Hello
+      </Button>
+      <Button size="small" icon>
+        Hello
+      </Button>
+      <Button size="large" icon status="enabled">
+        Hello
+      </Button>
+    </div>
   );
 }
