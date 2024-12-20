@@ -54,6 +54,13 @@ export default {
           fontWeight: "700",
         },
       ],
+      "12sm": [
+        "12px",
+        {
+          lineHeight: "18px",
+          fontWeight: "400",
+        },
+      ],
       "14sm": [
         "14px",
         {
