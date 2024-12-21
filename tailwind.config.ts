@@ -183,6 +183,7 @@ export default {
         shade60: "#E56D67",
         shade80: "#C42A22",
         shade: "#98211A",
+        dark: "#1B1B1B",
         black90: "#1B1B1BE5",
         black60: "#1B1B1B99",
         black30: "#1B1B1B1A",
