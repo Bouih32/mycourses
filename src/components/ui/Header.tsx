@@ -1,13 +1,19 @@
 import Image from "next/image";
 import logo from "@/images/logo.png";
+import avatar from "@/images/avatar.png";
 import Search from "./Search";
 import { MdKeyboardArrowDown, MdShoppingCart } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-import { FaBell } from "react-icons/fa6";
+import { FaBell, FaRegBell } from "react-icons/fa6";
+
 import Link from "next/link";
 import Button from "./Button";
 
-export default function Header() {
+type HeaderProps = {
+  loged?: boolean;
+};
+
+export default function Header({ loged }: HeaderProps) {
   return (
     <header className="flex items-center justify-between px-4 py-[9.4px] text-16sm text-dark lg:px-6 lg:py-[10px] xl:px-[120px] xl:py-2">
       <div className="flex items-center justify-center gap-[7px] lg:gap-[16px] xl:gap-[31.41px]">
@@ -27,21 +33,36 @@ export default function Header() {
       <Search />
 
       <div className="flex items-center gap-4 lg:gap-[18px]">
-        <Link href="#" className="mr-1 hidden lg:block">
+        <Link href="#" className="mr-1 hidden xl:block">
           Become Instructor
         </Link>
         <MdShoppingCart className="text-black60 lg:text-[24px] lg:text-dark" />
         <FaBell className="text-black60 lg:hidden" />
-        <Button
-          status="enabled"
-          size="small"
-          classname="text-black90 border-black90 hidden lg:flex"
-        >
-          Login
-        </Button>
-        <Button icon size="small" classname="hidden lg:flex">
-          Sign Up
-        </Button>
+        {!loged ? (
+          <div className="hidden items-center gap-4 lg:flex lg:gap-[18px]">
+            <Button
+              status="enabled"
+              size="small"
+              classname="text-black90 border-black90 "
+            >
+              Login
+            </Button>
+            <Button icon size="small">
+              Sign Up
+            </Button>
+          </div>
+        ) : (
+          <div className="flex items-center gap-4 lg:gap-[18px]">
+            <FaRegBell className="text-[24px]" />
+            <Image
+              src={avatar}
+              alt="avatar"
+              height={36}
+              width={36}
+              className="rounded-full"
+            />
+          </div>
+        )}
       </div>
     </header>
   );
