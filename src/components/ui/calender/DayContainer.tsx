@@ -4,7 +4,7 @@ import Day from "./Day";
 import { getDate } from "@/libs/utils";
 
 export default function DayContainer() {
-  const { day, firstDayOfMonth } = getDate();
+  const { day, firstDayOfMonth, daysInMonth } = getDate();
   let counter = 1;
 
   return (
@@ -20,7 +20,7 @@ export default function DayContainer() {
       <div className="grid grid-cols-7">
         {Array.from({ length: firstDayOfMonth + 1 }).map((_, index) => (
           <Day key={nanoid()} status="past">
-            {29 - index}
+            {daysInMonth - firstDayOfMonth + index}
           </Day>
         ))}
 

@@ -12,5 +12,6 @@ export const getDate = () => {
   const month = date.getMonth();
   const monthName = Date().split(" ")[1];
   const firstDayOfMonth = new Date(year, month - 1, 1).getDay();
-  return { day, year, month, firstDayOfMonth, monthName };
+  const daysInMonth = new Date(year, month, 0).getDate();
+  return { day, year, month, firstDayOfMonth, monthName, daysInMonth };
 };
