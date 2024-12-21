@@ -5,7 +5,6 @@ import Search from "./Search";
 import { MdKeyboardArrowDown, MdShoppingCart } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { FaBell, FaRegBell } from "react-icons/fa6";
-
 import Link from "next/link";
 import Button from "./Button";
 
