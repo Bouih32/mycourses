@@ -7,9 +7,16 @@ type ButtonProps = {
   size?: "large" | "small";
   icon?: boolean;
   status?: "enabled" | "disabled";
+  classname?: string;
 };
 
-export default function Button({ children, icon, size, status }: ButtonProps) {
+export default function Button({
+  children,
+  icon,
+  size,
+  status,
+  classname,
+}: ButtonProps) {
   return (
     <button
       className={cn(
@@ -21,6 +28,7 @@ export default function Button({ children, icon, size, status }: ButtonProps) {
             status === "enabled",
           "bg-black30 text-black30 hover:bg-black30": status === "disabled",
         },
+        classname,
       )}
     >
       {icon && <MdTimelapse />}

@@ -5,6 +5,7 @@ type ChooseProps = {
   children: ReactNode;
   small?: boolean;
   status?: "active" | "disabled";
+  classname?: string;
 };
 
 export default function Choose({ children, small, status }: ChooseProps) {
