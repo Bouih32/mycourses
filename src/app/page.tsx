@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="grid h-screen place-content-center space-y-10 bg-slate-200">
       <Calender>
-        <Month>Aug 2020</Month>
+        <Month />
         <DayContainer />
       </Calender>
     </div>

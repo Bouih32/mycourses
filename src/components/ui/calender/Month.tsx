@@ -1,13 +1,16 @@
-import { ReactNode } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-type MonthProps = { children: ReactNode };
+import { getDate } from "@/libs/utils";
 
-export default function Month({ children }: MonthProps) {
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+export default function Month() {
+  const { monthName, year } = getDate();
   return (
     <div className="flex items-center justify-between text-16lg text-[#080E2F]">
-      <IoIosArrowBack />
-      <h3 className="text-black"> {children}</h3>
-      <IoIosArrowForward />
+      <IoIosArrowBack className="cursor-pointer" />
+      <h3 className="text-black">
+        {monthName} {year}
+      </h3>
+      <IoIosArrowForward className="cursor-pointer" />
     </div>
   );
 }

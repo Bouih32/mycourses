@@ -1,29 +1,43 @@
 import { days } from "@/libs/constantes";
 import { nanoid } from "nanoid";
 import Day from "./Day";
+import { getDate } from "@/libs/utils";
 
 export default function DayContainer() {
-  let counter = 0;
+  const { day, firstDayOfMonth } = getDate();
+  let counter = 1;
+
   return (
     <section className="flex flex-col gap-4">
-      <div className="flex items-center justify-between text-16sm text-black60 opacity-[0.996]">
-        {days.map((day) => (
-          <span key={nanoid()}>{day}</span>
+      <div className="grid grid-cols-7 text-16sm text-black60 opacity-[0.996]">
+        {days.map((dayName) => (
+          <span key={nanoid()} className="text-center">
+            {dayName}
+          </span>
         ))}
       </div>
-      <div className="grid grid-cols-7">
-        {Array.from({ length: 35 }).map((_, index) => {
-          counter++;
-          if (counter > 31) {
-            counter = 1;
-          }
 
+      <div className="grid grid-cols-7">
+        {Array.from({ length: firstDayOfMonth + 1 }).map((_, index) => (
+          <Day key={nanoid()} status="past">
+            {29 - index}
+          </Day>
+        ))}
+
+        {Array.from({ length: 35 - (firstDayOfMonth + 1) }).map(() => {
+          const currentDay = counter++;
           return (
             <Day
               key={nanoid()}
-              status={index < 10 ? "past" : index === 10 ? "current" : null}
+              status={
+                currentDay < day
+                  ? "past"
+                  : currentDay === day
+                    ? "current"
+                    : null
+              }
             >
-              {counter}
+              {currentDay}
             </Day>
           );
         })}

@@ -4,3 +4,13 @@ import { clsx, type ClassValue } from "clsx";
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
+
+export const getDate = () => {
+  const date = new Date();
+  const day = date.getDate();
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const monthName = Date().split(" ")[1];
+  const firstDayOfMonth = new Date(year, month - 1, 1).getDay();
+  return { day, year, month, firstDayOfMonth, monthName };
+};
