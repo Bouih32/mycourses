@@ -1,11 +1,11 @@
 import { cn } from "@/libs/utils";
 import { FaCircle } from "react-icons/fa";
 
-type SwitchType = {
+type SwitchProps = {
   disabled?: boolean;
 };
 
-export default function Switch({ disabled }: SwitchType) {
+export default function Switch({ disabled }: SwitchProps) {
   return (
     <label
       className={cn(

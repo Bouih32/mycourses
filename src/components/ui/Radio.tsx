@@ -7,11 +7,11 @@ import {
   MdOutlineRadioButtonUnchecked,
 } from "react-icons/md";
 
-type RadioType = {
+type RadioProps = {
   disabled?: boolean;
 };
 
-export default function Radio({ disabled }: RadioType) {
+export default function Radio({ disabled }: RadioProps) {
   const [checked, setChecked] = useState(false);
 
   const handleClick = () => {
