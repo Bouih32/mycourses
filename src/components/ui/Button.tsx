@@ -13,7 +13,7 @@ export default function Button({ children, icon, size, status }: ButtonProps) {
   return (
     <button
       className={cn(
-        "flex items-center gap-2 rounded-[14px] bg-primary px-[18px] py-2.5 text-16lg text-white hover:bg-shade80",
+        "flex items-center justify-center gap-2 rounded-[14px] bg-primary px-[18px] py-2.5 text-16lg text-white hover:bg-shade80",
         {
           "rounded-[18px] px-6 py-3 text-20lg": size === "large",
           "rounded-xl px-4 py-2 text-12lg": size === "small",
