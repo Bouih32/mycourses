@@ -1,14 +1,14 @@
-import Option from "@/components/ui/select/Option";
-import Select from "@/components/ui/select/Select";
+import Calender from "@/components/ui/calender/Calender";
+import DayContainer from "@/components/ui/calender/DayContainer";
+import Month from "@/components/ui/calender/Month";
 
 export default function Home() {
   return (
     <div className="grid h-screen place-content-center space-y-10 bg-slate-200">
-      <Select>
-        <Option>Option1</Option>
-        <Option>Option1</Option>
-        <Option>Option1</Option>
-      </Select>
+      <Calender>
+        <Month>Aug 2020</Month>
+        <DayContainer />
+      </Calender>
     </div>
   );
 }
