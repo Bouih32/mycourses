@@ -179,6 +179,9 @@ export default {
       backgroundImage: {
         promoImage:
           "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.88) 100%)",
+
+        expertGradient:
+          "linear-gradient(180deg, rgba(201, 59, 59, 0.00) 39.22%, rgba(0, 0, 0, 0.50) 100%)",
       },
       colors: {
         primary: "#3DCBB1",

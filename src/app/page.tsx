@@ -15,13 +15,12 @@
 // import SimplePromo from "@/components/ui/promo/SimplePromo";
 // import AdvancedPromo from "@/components/ui/promo/AdvancedPromo";
 // import PromoImage from "@/components/ui/promo/PromoImage";
-
-import PromoSolid from "@/components/ui/promo/PromoSolid";
+// import PromoSolid from "@/components/ui/promo/PromoSolid";
+// import InstructorCard from "@/components/ui/card/InstructorCard";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center space-y-8 bg-slate-100 pt-8">
-      <PromoSolid />
       {/* <div className="space-y-4">
         <Header />
         <Header loged />
@@ -101,7 +100,13 @@ export default function Home() {
 
       <SimplePromo />
        <AdvancedPromo />
+
+          <div className="flex gap-8">
         <PromoImage />
+        <PromoSolid />
+        <InstructorCard />
+      </div>
+       
 
       <Footer /> */}
     </main>
