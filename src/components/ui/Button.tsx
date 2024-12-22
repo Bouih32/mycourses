@@ -26,7 +26,8 @@ export default function Button({
           "rounded-xl px-4 py-2 text-12lg": size === "small",
           "border border-black60 bg-white text-black60 hover:bg-white":
             status === "enabled",
-          "bg-black30 text-black30 hover:bg-black30": status === "disabled",
+          "pointer-events-none bg-black30 text-black30 hover:bg-black30":
+            status === "disabled",
         },
         classname,
       )}

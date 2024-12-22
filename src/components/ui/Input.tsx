@@ -31,10 +31,13 @@ export default function Input({
           <input
             type="text"
             placeholder={placeholder ?? label}
-            className={cn("text-16sm text-black90 caret-primary outline-none", {
-              "placeholder:text-black90": placeholder,
-              "text-black30 placeholder:text-black30": disabled,
-            })}
+            className={cn(
+              "bg-transparent text-16sm text-black90 caret-primary outline-none",
+              {
+                "placeholder:text-black90": placeholder,
+                "text-black30 placeholder:text-black30": disabled,
+              },
+            )}
             disabled={disabled}
           />
           <MdTimelapse className="text-black30" />
