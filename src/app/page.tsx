@@ -1,21 +1,22 @@
-import Button from "@/components/ui/Button";
-import Calender from "@/components/ui/calender/Calender";
-import DayContainer from "@/components/ui/calender/DayContainer";
-import Month from "@/components/ui/calender/Month";
-import Choose from "@/components/ui/Choose";
-import Footer from "@/components/ui/Footer";
-import Header from "@/components/ui/Header";
-import Input from "@/components/ui/Input";
-import Radio from "@/components/ui/Radio";
-import Search from "@/components/ui/Search";
-import Option from "@/components/ui/select/Option";
-import Select from "@/components/ui/select/Select";
-import Switch from "@/components/ui/Switch";
+// import Button from "@/components/ui/Button";
+// import Calender from "@/components/ui/calender/Calender";
+// import DayContainer from "@/components/ui/calender/DayContainer";
+// import Month from "@/components/ui/calender/Month";
+// import Choose from "@/components/ui/Choose";
+// import Footer from "@/components/ui/Footer";
+// import Header from "@/components/ui/Header";
+// import Input from "@/components/ui/Input";
+// import Radio from "@/components/ui/Radio";
+// import Search from "@/components/ui/Search";
+// import Option from "@/components/ui/select/Option";
+// import Select from "@/components/ui/select/Select";
+// import Switch from "@/components/ui/Switch";
+// import Card from "@/components/ui/card/Card";
 
 export default function Home() {
   return (
-    <main className="flex flex-col space-y-8 bg-slate-100">
-      <div className="space-y-4">
+    <main className="flex min-h-screen flex-col items-center space-y-8 bg-slate-100 pt-8">
+      {/* <div className="space-y-4">
         <Header />
         <Header loged />
       </div>
@@ -86,8 +87,13 @@ export default function Home() {
           <DayContainer />
         </Calender>
       </section>
+          <div className="flex gap-8">
+        <Card />
+        <Card type="wishlist" />
+        <Card type="watch" />
+      </div>
 
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }
