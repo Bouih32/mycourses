@@ -1,33 +1,37 @@
-// import Button from "@/components/ui/Button";
-// import Calender from "@/components/ui/calender/Calender";
-// import DayContainer from "@/components/ui/calender/DayContainer";
-// import Month from "@/components/ui/calender/Month";
-// import Choose from "@/components/ui/Choose";
-// import Footer from "@/components/ui/Footer";
-// import Header from "@/components/ui/Header";
-// import Input from "@/components/ui/Input";
-// import Radio from "@/components/ui/Radio";
-// import Search from "@/components/ui/Search";
-// import Option from "@/components/ui/select/Option";
-// import Select from "@/components/ui/select/Select";
-// import Switch from "@/components/ui/Switch";
-// import Card from "@/components/ui/card/Card";
-// import SimplePromo from "@/components/ui/promo/SimplePromo";
-// import AdvancedPromo from "@/components/ui/promo/AdvancedPromo";
-// import PromoImage from "@/components/ui/promo/PromoImage";
-// import PromoSolid from "@/components/ui/promo/PromoSolid";
-// import InstructorCard from "@/components/ui/card/InstructorCard";
+import Button from "@/components/ui/Button";
+import Calender from "@/components/ui/calender/Calender";
+import DayContainer from "@/components/ui/calender/DayContainer";
+import Month from "@/components/ui/calender/Month";
+import Choose from "@/components/ui/Choose";
+import Footer from "@/components/ui/Footer";
+import Header from "@/components/ui/Header";
+import Input from "@/components/ui/Input";
+import Radio from "@/components/ui/Radio";
+import Search from "@/components/ui/Search";
+import Option from "@/components/ui/select/Option";
+import Select from "@/components/ui/select/Select";
+import Switch from "@/components/ui/Switch";
+import Card from "@/components/ui/card/Card";
+import SimplePromo from "@/components/ui/promo/SimplePromo";
+import AdvancedPromo from "@/components/ui/promo/AdvancedPromo";
+import PromoImage from "@/components/ui/promo/PromoImage";
+import PromoSolid from "@/components/ui/promo/PromoSolid";
+import InstructorCard from "@/components/ui/card/InstructorCard";
+
+import ChatItem from "@/components/ui/list/ChatItem";
+import ListChild from "@/components/ui/list/ListChild";
+import ListGraph from "@/components/ui/list/ListGraph";
+import ListParent from "@/components/ui/list/ListParent";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center space-y-8 bg-slate-100 pt-8">
-      {/* <div className="space-y-4">
+    <main className="flex min-h-screen flex-col space-y-8 bg-slate-100 pt-8">
+      <div className="space-y-4">
         <Header />
         <Header loged />
       </div>
       <section className="flex flex-col space-y-8 px-8">
-        {" "}
-        <div className="flex h-fit w-fit items-center gap-4">
+        <div className="flex h-fit items-center gap-4">
           <Button>Button</Button>
           <Button icon>Button</Button>
           <Button icon />
@@ -44,13 +48,13 @@ export default function Home() {
             Button
           </Button>
         </div>
-        <div className="flex h-fit w-fit items-center gap-4">
+        <div className="flex h-fit items-center gap-4">
           <Choose>Choose</Choose>
           <Choose small>Choose</Choose>
           <Choose status="active">Choose</Choose>
           <Choose status="disabled">Choose</Choose>
         </div>
-        <div className="flex h-fit w-fit items-center gap-8">
+        <div className="flex h-fit w-full items-center justify-center gap-8">
           <Input label="text goes here" />
           <Input label="text goes here" placeholder="placeholder" />
           <Input label="text goes here" placeholder="placeholder" disabled />
@@ -92,23 +96,32 @@ export default function Home() {
           <DayContainer />
         </Calender>
       </section>
-          <div className="flex gap-8">
-        <Card />
-        <Card type="wishlist" />
-        <Card type="watch" />
+      <section className="flex flex-col items-center justify-center gap-8">
+        <div className="flex gap-8">
+          <Card />
+          <Card type="wishlist" />
+          <Card type="watch" />
+        </div>
+        <SimplePromo />
+        <AdvancedPromo />
+        <div className="flex justify-center gap-8">
+          <PromoImage />
+          <PromoSolid />
+          <InstructorCard />
+        </div>
+      </section>
+
+      <div className="flex flex-wrap items-center gap-8 p-4">
+        <ListParent />
+        <ListParent large />
+        <ListChild image />
+        <ListChild />
+        <ListChild large />
+        <ListGraph />
+        <ChatItem />
       </div>
 
-      <SimplePromo />
-       <AdvancedPromo />
-
-          <div className="flex gap-8">
-        <PromoImage />
-        <PromoSolid />
-        <InstructorCard />
-      </div>
-       
-
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }

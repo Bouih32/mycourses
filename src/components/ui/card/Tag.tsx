@@ -10,7 +10,7 @@ type TagProps = {
 export default function Tag({ sold, children, rounded }: TagProps) {
   return (
     <span
-      className={cn("w-fit bg-primary p-1 text-8lg text-white", {
+      className={cn("w-fit rounded-[2px] bg-primary p-1 text-8lg text-white", {
         "bg-warning": sold,
         "rounded-[23px]": rounded,
       })}
