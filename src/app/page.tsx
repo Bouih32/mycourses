@@ -8,6 +8,8 @@ import Header from "@/components/ui/Header";
 import Input from "@/components/ui/Input";
 import Radio from "@/components/ui/Radio";
 import Search from "@/components/ui/Search";
+import Option from "@/components/ui/select/Option";
+import Select from "@/components/ui/select/Select";
 import Switch from "@/components/ui/Switch";
 
 export default function Home() {
@@ -55,6 +57,24 @@ export default function Home() {
         <div className="flex gap-8">
           <Radio />
           <Radio disabled />
+        </div>
+        <div className="flex items-center gap-8">
+          <Select>
+            <Option>Option1</Option>
+            <Option>Option2</Option>
+            <Option>Option3</Option>
+          </Select>
+
+          <Select>
+            <Option size="small">Option1</Option>
+            <Option size="small">Option2</Option>
+            <Option size="small">Option3</Option>
+          </Select>
+          <Select>
+            <Option size="large">Option1</Option>
+            <Option size="large">Option2</Option>
+            <Option size="large">Option3</Option>
+          </Select>
         </div>
         <Search />
         <div className="flex gap-8">
