@@ -8,7 +8,12 @@ type ChooseProps = {
   classname?: string;
 };
 
-export default function Choose({ children, small, status }: ChooseProps) {
+export default function Choose({
+  children,
+  small,
+  status,
+  classname,
+}: ChooseProps) {
   return (
     <span
       className={cn(
@@ -19,6 +24,7 @@ export default function Choose({ children, small, status }: ChooseProps) {
           "pointer-events-none border-[#454849] bg-[#454849]/10 text-[#454849]":
             status === "disabled",
         },
+        classname,
       )}
     >
       {children}

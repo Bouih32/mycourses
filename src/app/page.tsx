@@ -16,9 +16,12 @@
 // import AdvancedPromo from "@/components/ui/promo/AdvancedPromo";
 // import PromoImage from "@/components/ui/promo/PromoImage";
 
+import PromoSolid from "@/components/ui/promo/PromoSolid";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center space-y-8 bg-slate-100 pt-8">
+      <PromoSolid />
       {/* <div className="space-y-4">
         <Header />
         <Header loged />
