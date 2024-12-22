@@ -19,8 +19,10 @@ export default function CardCover({ type }: CardCoverProps) {
         className="h-full w-full rounded-[23px] object-cover"
       />
       <div className="absolute left-[10px] top-[8px] flex items-center gap-[8.5px]">
-        <Tag>Best Seller</Tag>
-        <Tag sold>20% OFF</Tag>
+        <Tag rounded>Best Seller</Tag>
+        <Tag sold rounded>
+          20% OFF
+        </Tag>
       </div>
       {type && (
         <div className="absolute right-[12px] top-[12px] grid h-6 w-6 cursor-pointer place-content-center rounded-full bg-white">

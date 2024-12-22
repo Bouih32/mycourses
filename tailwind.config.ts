@@ -176,6 +176,10 @@ export default {
     },
 
     extend: {
+      backgroundImage: {
+        promoImage:
+          "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.88) 100%)",
+      },
       colors: {
         primary: "#3DCBB1",
         secondary: "#FFD130",
