@@ -6,7 +6,7 @@ export default function Search() {
       <input
         type="text"
         placeholder="Search for course"
-        className="bg-transparent caret-primary outline-none placeholder:text-black60"
+        className="flex-1 bg-transparent caret-primary outline-none placeholder:text-black60"
       />
       <IoMdSearch />
     </div>
