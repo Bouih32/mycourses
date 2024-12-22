@@ -13,9 +13,12 @@
 // import Switch from "@/components/ui/Switch";
 // import Card from "@/components/ui/card/Card";
 
+import SimplePromo from "@/components/ui/promo/SimplePromo";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center space-y-8 bg-slate-100 pt-8">
+      <SimplePromo />
       {/* <div className="space-y-4">
         <Header />
         <Header loged />
