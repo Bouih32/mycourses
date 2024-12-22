@@ -12,13 +12,14 @@
 // import Select from "@/components/ui/select/Select";
 // import Switch from "@/components/ui/Switch";
 // import Card from "@/components/ui/card/Card";
+// import SimplePromo from "@/components/ui/promo/SimplePromo";
 
-import SimplePromo from "@/components/ui/promo/SimplePromo";
+import AdvancedPromo from "@/components/ui/promo/AdvancedPromo";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center space-y-8 bg-slate-100 pt-8">
-      <SimplePromo />
+      <AdvancedPromo />
       {/* <div className="space-y-4">
         <Header />
         <Header loged />
@@ -95,6 +96,8 @@ export default function Home() {
         <Card type="wishlist" />
         <Card type="watch" />
       </div>
+
+      <SimplePromo />
 
       <Footer /> */}
     </main>
