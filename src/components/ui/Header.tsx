@@ -9,10 +9,10 @@ import Link from "next/link";
 import Button from "./Button";
 
 type HeaderProps = {
-  loged?: boolean;
+  logged?: boolean;
 };
 
-export default function Header({ loged }: HeaderProps) {
+export default function Header({ logged }: HeaderProps) {
   return (
     <header className="flex items-center justify-between px-4 py-[9.4px] text-16sm text-dark lg:px-6 lg:py-[10px] xl:px-[120px] xl:py-2">
       <div className="flex items-center justify-center gap-[7px] lg:gap-[16px] xl:gap-[31.41px]">
@@ -37,18 +37,12 @@ export default function Header({ loged }: HeaderProps) {
         </Link>
         <MdShoppingCart className="text-black60 lg:text-[24px] lg:text-dark" />
         <FaBell className="text-black60 lg:hidden" />
-        {!loged ? (
+        {!logged ? (
           <div className="hidden items-center gap-4 lg:flex lg:gap-[18px]">
-            <Button
-              status="enabled"
-              size="small"
-              classname="text-black90 border-black90 "
-            >
+            <Button status="enabled" classname="text-black90 border-black90 ">
               Login
             </Button>
-            <Button icon size="small">
-              Sign Up
-            </Button>
+            <Button icon>Sign Up</Button>
           </div>
         ) : (
           <div className="flex items-center gap-4 lg:gap-[18px]">
