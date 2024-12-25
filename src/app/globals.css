@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.expertGradient {
+  @apply before:absolute before:z-20 before:h-full before:w-full before:bg-expertGradient;
+}
