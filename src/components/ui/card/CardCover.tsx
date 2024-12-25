@@ -16,7 +16,7 @@ export default function CardCover({ type }: CardCoverProps) {
       <Image
         src={placeholder}
         alt="cover"
-        className="h-full w-full rounded-[23px] object-cover"
+        className="h-full w-full rounded-[3px] object-cover lg:rounded-[23px]"
       />
       <div className="absolute left-[10px] top-[8px] flex items-center gap-[8.5px]">
         <Tag rounded>Best Seller</Tag>
