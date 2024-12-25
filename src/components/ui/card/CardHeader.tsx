@@ -3,7 +3,7 @@ import { FaRegUser } from "react-icons/fa6";
 export default function CardHeader() {
   return (
     <div className="space-y-1 text-10sm lg:text-14sm">
-      <h2 className="text-12sm lg:text-16lg">
+      <h2 className="text-12lg lg:text-16lg">
         Adobe Illustrator Scretch Course
       </h2>
       <div className="flex items-center gap-1">
