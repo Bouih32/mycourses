@@ -2,6 +2,7 @@ import { nanoid } from "nanoid";
 import Card from "../ui/card/Card";
 import SubTitle from "../ui/typography/SubTitle";
 import Title from "../ui/typography/Title";
+import { moreSection } from "@/libs/constantes";
 
 export default function More() {
   return (
@@ -11,8 +12,8 @@ export default function More() {
         <SubTitle>We know the best things for You. Top picks for You.</SubTitle>
       </div>
       <div className="flex flex-nowrap gap-4 overflow-hidden lg:gap-5">
-        {Array.from({ length: 4 }).map(() => (
-          <Card key={nanoid()} />
+        {moreSection.map((ele) => (
+          <Card key={nanoid()} data={ele} />
         ))}
       </div>
     </section>

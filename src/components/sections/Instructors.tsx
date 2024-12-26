@@ -3,6 +3,7 @@ import Title from "../ui/typography/Title";
 import SubTitle from "../ui/typography/SubTitle";
 import InstructorCard from "../ui/card/InstructorCard";
 import { nanoid } from "nanoid";
+import { instructors } from "@/libs/constantes";
 
 export default function Instructors() {
   return (
@@ -12,8 +13,8 @@ export default function Instructors() {
         <SubTitle>We know the best things for You. Top picks for You.</SubTitle>
       </div>
       <div className="flex flex-nowrap gap-4 overflow-hidden lg:gap-5">
-        {Array.from({ length: 4 }).map(() => (
-          <InstructorCard key={nanoid()} />
+        {instructors.map((ele) => (
+          <InstructorCard data={ele} key={nanoid()} />
         ))}
       </div>
     </section>

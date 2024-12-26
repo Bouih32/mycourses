@@ -1,20 +1,19 @@
-import Image from "next/image";
-import placeholder from "@/images/placeholder.png";
+import Image, { StaticImageData } from "next/image";
 import { IoMdMore, IoMdHeart } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa6";
-
 import Tag from "./Tag";
 import ProgressBar from "./ProgressBar";
 
 type CardCoverProps = {
   type?: "wishlist" | "watch";
+  cover: StaticImageData;
 };
 
-export default function CardCover({ type }: CardCoverProps) {
+export default function CardCover({ type, cover }: CardCoverProps) {
   return (
     <div className="relative h-[161px] w-[285px]">
       <Image
-        src={placeholder}
+        src={cover}
         alt="cover"
         className="h-full w-full rounded-[3px] object-cover lg:rounded-[23px]"
       />

@@ -2,6 +2,7 @@ import { nanoid } from "nanoid";
 import SubTitle from "../ui/typography/SubTitle";
 import Title from "../ui/typography/Title";
 import Card from "../ui/card/Card";
+import { trendingData1, trendingData2 } from "@/libs/constantes";
 
 export default function Trending() {
   return (
@@ -14,15 +15,15 @@ export default function Trending() {
           </SubTitle>
         </div>
         <div className="flex flex-nowrap gap-4 overflow-hidden lg:gap-5">
-          {Array.from({ length: 4 }).map(() => (
-            <Card key={nanoid()} />
+          {trendingData1.map((ele) => (
+            <Card data={ele} key={nanoid()} />
           ))}
         </div>
       </section>
       <section className="hidden space-y-4 pl-5 lg:block lg:space-y-5 lg:pl-0">
         <div className="flex flex-nowrap gap-4 overflow-hidden lg:gap-5">
-          {Array.from({ length: 4 }).map(() => (
-            <Card key={nanoid()} />
+          {trendingData2.map((ele) => (
+            <Card data={ele} key={nanoid()} />
           ))}
         </div>
       </section>
