@@ -177,6 +177,10 @@ export default {
     },
 
     extend: {
+      screens: {
+        laptop: "1200px", // Custom breakpoint
+      },
+
       backgroundImage: {
         promoImage:
           "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.88) 100%)",

@@ -4,7 +4,7 @@ import logo from "@/images/logoFooter.png";
 
 export default function Footer() {
   return (
-    <footer className="hidden flex-col bg-dark pb-[22px] pt-[40px] text-16sm text-white lg:flex lg:px-[60px] xl:px-[120px]">
+    <footer className="mt-6 hidden flex-col bg-dark pb-[22px] pt-[40px] text-16sm text-white md:mt-10 lg:flex lg:px-[60px] xl:px-[120px]">
       <section className="grid grid-cols-4 pb-[60px]">
         <Image
           src={logo}

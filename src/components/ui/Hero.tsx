@@ -6,7 +6,7 @@ import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 
 export default function Hero() {
   return (
-    <section className="relative flex h-[126px] w-screen overflow-hidden md:h-[400px] lg:w-[909px] lg:rounded-2xl xl:w-[1200px]">
+    <section className="relative flex h-[126px] w-full overflow-hidden md:h-[400px] lg:rounded-2xl">
       <div className="absolute left-0 top-[50%] z-40 hidden w-full -translate-y-[50%] justify-between text-white lg:flex">
         <div className="cursor-pointer bg-white/20 px-[7px] py-[30px]">
           <GoChevronLeft />
