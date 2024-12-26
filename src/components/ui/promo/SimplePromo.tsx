@@ -5,7 +5,7 @@ import Button from "../Button";
 
 export default function SimplePromo() {
   return (
-    <section className="relative hidden items-center justify-between gap-[78px] overflow-hidden rounded-xl bg-[#2273D1] px-[60px] py-[51px] lg:flex xl:gap-[55px]">
+    <section className="relative hidden items-center justify-between gap-[78px] overflow-hidden rounded-xl bg-[#2273D1] px-[60px] py-[51px] lg:flex laptop:gap-[55px]">
       <Image
         src={aare}
         alt="decore"
@@ -13,7 +13,7 @@ export default function SimplePromo() {
       />
       <div className="space-y-1 text-white">
         <h3 className="text-32lg">Join and get amazing discount</h3>
-        <p className="hidden text-24sm text-white60 xl:block">
+        <p className="hidden text-24sm text-white60 laptop:block">
           With our responsive themes and mobile and desktop apps
         </p>
       </div>

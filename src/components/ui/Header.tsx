@@ -16,7 +16,7 @@ type HeaderProps = {
 export default function Header({ logged }: HeaderProps) {
   return (
     <Container>
-      <header className="mb-6 flex items-center justify-between px-4 py-[9.4px] text-16sm text-dark sm:px-0 md:mb-10 lg:py-[10px] xl:py-2">
+      <header className="mb-6 flex items-center justify-between px-4 py-[9.4px] text-16sm text-dark sm:px-0 md:mb-10 lg:py-[14px] xl:py-2">
         <div className="flex items-center justify-center gap-[7px] lg:gap-[16px] xl:gap-[31.41px]">
           <IoMenu className="text-[24px] font-bold text-primary lg:hidden" />
           <Image

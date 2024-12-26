@@ -15,7 +15,7 @@ export default function Hero() {
           <GoChevronRight />
         </div>
       </div>
-      <div className="relative w-[130px] bg-primary text-white md:w-[250px] xl:w-[455px]">
+      <div className="relative w-[130px] bg-primary text-white md:w-[250px] laptop:w-[455px]">
         <Image
           src={decor}
           alt="avatar"
