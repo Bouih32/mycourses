@@ -1,13 +1,19 @@
 import { nanoid } from "nanoid";
 import Choose from "../ui/Choose";
+import { filters } from "@/libs/constantes";
 
 export default function Filter() {
   return (
-    <section className="mt-[24px] hidden space-x-2 px-5 sm:px-0 lg:block">
-      <Choose status="active">Adobe Illustrator</Choose>
-      {Array.from({ length: 7 }).map(() => (
-        <Choose key={nanoid()}>Adobe Illustrator</Choose>
-      ))}
+    <section className="mt-[24px] hidden flex-nowrap items-center gap-2 overflow-hidden px-5 sm:px-0 lg:flex">
+      {filters.map((ele, index) => {
+        return index === 0 ? (
+          <Choose key={nanoid()} status="active">
+            {ele}
+          </Choose>
+        ) : (
+          <Choose key={nanoid()}>{ele}</Choose>
+        );
+      })}
     </section>
   );
 }

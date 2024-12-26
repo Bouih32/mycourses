@@ -59,3 +59,14 @@ export const instructors = [
     job: "Film Maker & Director",
   },
 ];
+
+export const filters = [
+  "All Recommendation",
+  "Adobe Illustrator",
+  "Adobe Photoshop",
+  "UI Design",
+  "Web Programmings",
+  "Mobile Programming",
+  "Backend Development",
+  "Vue JS",
+];
