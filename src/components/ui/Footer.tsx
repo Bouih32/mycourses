@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 import logo from "@/images/logoFooter.png";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -14,20 +15,45 @@ export default function Footer() {
           className="fill-white"
         />
         <ul className="space-y-4">
-          <li>Web Programming</li>
-          <li>Mobile Programming</li>
-          <li>Java Beginner</li>
-          <li>PHP Beginner</li>
+          <li>
+            <Link href="#">Web Programming</Link>
+          </li>
+          <li>
+            <Link href="#">Mobile Programming</Link>
+          </li>
+          <li>
+            <Link href="#">Java Beginner</Link>
+          </li>
+          <li>
+            <Link href="#">PHP Beginner</Link>
+          </li>
         </ul>
         <ul className="space-y-4">
-          <li>Adobe Illustrator</li>
-          <li>Adobe Photoshop</li>
-          <li>Design Logo</li>
+          <li>
+            <Link href="#">Adobe Illustrator</Link>
+          </li>
+          <li>
+            {" "}
+            <Link href="#">Adobe Photoshop</Link>
+          </li>
+          <li>
+            {" "}
+            <Link href="#">Design Logo</Link>
+          </li>
         </ul>
         <ul className="space-y-4">
-          <li>Writing Course</li>
-          <li>Photography</li>
-          <li>Video Making</li>
+          <li>
+            {" "}
+            <Link href="#">Writing Course</Link>
+          </li>
+          <li>
+            {" "}
+            <Link href="#">Photography</Link>
+          </li>
+          <li>
+            {" "}
+            <Link href="#">Video Making</Link>
+          </li>
         </ul>
       </section>
       <section className="flex items-center justify-between border-t border-white60 pt-[22px] text-white60">

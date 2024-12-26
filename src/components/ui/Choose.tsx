@@ -17,7 +17,7 @@ export default function Choose({
   return (
     <span
       className={cn(
-        "w-fit rounded-[10px] border border-black60 px-2 py-1 text-center text-12sm text-black60 lg:rounded-xl lg:px-4 lg:py-2 lg:text-14sm",
+        "w-fit cursor-pointer rounded-[10px] border border-black60 px-2 py-1 text-center text-12sm text-black60 hover:border-primary hover:text-primary lg:rounded-xl lg:px-4 lg:py-2 lg:text-14sm",
         {
           "border-primary text-primary": status === "active",
           "pointer-events-none border-[#454849] bg-[#454849]/10 text-[#454849]":

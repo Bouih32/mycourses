@@ -7,7 +7,7 @@ type CardProps = {
 
 export default function Card({ type }: CardProps) {
   return (
-    <div className="w-[285px] space-y-1">
+    <div className="w-[285px] cursor-pointer space-y-1">
       <CardCover type={type} />
       <CardHeader />
       {type !== "watch" && <CardFooter />}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function InstructorCard() {
   return (
-    <div className="relative min-w-[147px] overflow-hidden lg:rounded-[18px]">
+    <div className="relative min-w-[147px] cursor-pointer overflow-hidden lg:rounded-[18px]">
       <Image
         src={instructor}
         alt="instructor"
