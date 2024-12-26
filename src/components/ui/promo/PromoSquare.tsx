@@ -4,8 +4,8 @@ import Button from "../Button";
 
 export default function PromoSquare() {
   return (
-    <section className="relative flex w-[387px] overflow-hidden rounded-[3px] text-white">
-      <div className="z-50 w-[165px] space-y-[32px] bg-primary pb-6 pl-5 pt-4">
+    <section className="relative flex w-[335px] overflow-hidden rounded-[3px] text-white lg:w-[387px]">
+      <div className="z-50 w-[143px] space-y-[32px] bg-primary p-[14px] lg:w-[165px] lg:pb-6 lg:pl-5 lg:pt-4">
         <div className="space-y-1">
           <h3 className="text-12lg">WEBINAR</h3>
           <p className="text-12sm">August 16, 2020</p>
@@ -27,7 +27,7 @@ export default function PromoSquare() {
       <Image
         src={girl}
         alt="girl smiling"
-        className="absolute right-0 top-0 z-10 h-full w-[222px]"
+        className="absolute right-0 top-0 z-10 h-full w-[192px] lg:w-[222px]"
       />
     </section>
   );

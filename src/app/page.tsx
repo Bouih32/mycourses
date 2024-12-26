@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </section>
       <SimplePromo />
-      <section className="px-5 lg:hidden">
+      <section className="mx-auto mb-10 lg:hidden">
         <PromoSquare />
       </section>
     </Container>
