@@ -33,25 +33,20 @@ export default function Footer() {
             <Link href="#">Adobe Illustrator</Link>
           </li>
           <li>
-            {" "}
             <Link href="#">Adobe Photoshop</Link>
           </li>
           <li>
-            {" "}
             <Link href="#">Design Logo</Link>
           </li>
         </ul>
         <ul className="space-y-4">
           <li>
-            {" "}
             <Link href="#">Writing Course</Link>
           </li>
           <li>
-            {" "}
             <Link href="#">Photography</Link>
           </li>
           <li>
-            {" "}
             <Link href="#">Video Making</Link>
           </li>
         </ul>
