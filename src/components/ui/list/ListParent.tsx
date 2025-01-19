@@ -38,7 +38,7 @@ export default function ListParent({ large }: ListChildProps) {
           >
             <p>Amount of Episodes</p>
             <LuDot />
-            <p className="text-primary">Minutes Total</p>
+            <p className="text-main">Minutes Total</p>
           </div>
         </div>
       </div>

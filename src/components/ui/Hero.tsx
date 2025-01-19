@@ -16,7 +16,7 @@ export default function Hero() {
             <GoChevronRight />
           </div>
         </div>
-        <div className="relative w-[130px] bg-primary text-white md:w-[250px] laptop:w-[455px]">
+        <div className="bg-main relative w-[130px] text-white md:w-[250px] laptop:w-[455px]">
           <Image
             src={decor}
             alt="avatar"
@@ -32,7 +32,7 @@ export default function Hero() {
                 Become professionals and ready to join the world.
               </p>
             </div>
-            <Button classname="hidden lg:block bg-white text-primary hover:text-white">
+            <Button classname="hidden lg:block bg-white text-main hover:text-white">
               Explore Photography
             </Button>
             <Button
@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
       </section>
       <section className="mx-auto flex items-center justify-center gap-2">
-        <div className="h-2 w-2 rounded-full bg-primary"></div>
+        <div className="bg-main h-2 w-2 rounded-full"></div>
         <div className="h-1.5 w-1.5 rounded-full bg-black30"></div>
         <div className="h-1.5 w-1.5 rounded-full bg-black30"></div>
         <div className="h-1.5 w-1.5 rounded-full bg-black30"></div>

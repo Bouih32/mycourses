@@ -32,7 +32,7 @@ export default function Input({
             type="text"
             placeholder={placeholder ?? label}
             className={cn(
-              "bg-transparent text-16sm text-black90 caret-primary outline-none",
+              "caret-main bg-transparent text-16sm text-black90 outline-none",
               {
                 "placeholder:text-black90": placeholder,
                 "text-black30 placeholder:text-black30": disabled,

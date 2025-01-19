@@ -18,7 +18,7 @@ export default function Search({ classname, promo }: SearchProps) {
         type="text"
         placeholder="Search for course"
         className={cn(
-          "flex-1 bg-transparent caret-primary outline-none placeholder:text-black60",
+          "caret-main flex-1 bg-transparent outline-none placeholder:text-black60",
           { "placeholder:text-white60": promo },
         )}
       />

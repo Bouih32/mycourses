@@ -22,7 +22,7 @@ export default function Switch({ disabled }: SwitchProps) {
       <input type="checkbox" value="" className="peer sr-only" id="checkBox" />
       <FaCircle
         className={cn(
-          "text-dark absolute left-0 top-0 text-[18px] transition-all duration-300 ease-in-out peer-checked:left-auto peer-checked:right-0 peer-checked:text-primary",
+          "peer-checked:text-main absolute left-0 top-0 text-[18px] text-dark transition-all duration-300 ease-in-out peer-checked:left-auto peer-checked:right-0",
           {
             "text-black90": disabled,
           },

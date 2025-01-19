@@ -30,7 +30,7 @@ export default function ListChild({ large, image }: ListChildProps) {
           </h3>
           <div className="flex items-center gap-1">
             <IoMdPlayCircle className="text-black30" />
-            <p className="text-8sm text-primary">Minutes Total</p>
+            <p className="text-main text-8sm">Minutes Total</p>
           </div>
         </div>
       </div>

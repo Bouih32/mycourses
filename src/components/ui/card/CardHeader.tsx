@@ -9,7 +9,7 @@ export default function CardHeader({ title }: CardHeaderProps) {
       <h2 className="text-12lg lg:text-16lg">{title}</h2>
       <div className="flex items-center gap-1">
         <FaRegUser className="text-[10px] text-black60 lg:text-[12px]" />
-        <p className="text-primary">Kitani Studio</p>
+        <p className="text-main">Kitani Studio</p>
       </div>
       <p className="line-clamp-3 text-black90">
         More than 8yr Experience as Illustrator. Learn how to becoming

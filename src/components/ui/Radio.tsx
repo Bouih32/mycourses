@@ -27,7 +27,7 @@ export default function Radio({ disabled }: RadioProps) {
       onClick={handleClick}
     >
       {checked ? (
-        <MdOutlineRadioButtonChecked className="h-full w-full text-primary" />
+        <MdOutlineRadioButtonChecked className="text-main h-full w-full" />
       ) : (
         <MdOutlineRadioButtonUnchecked
           className={cn("h-full w-full text-[#C1C2C2]", {
