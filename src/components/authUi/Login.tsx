@@ -2,6 +2,7 @@ import Image from "next/image";
 import logo from "@/images/logo.png";
 import LoginForm from "./LoginForm";
 import SideImage from "./SideImage";
+import OtherMethodes from "./OtherMethodes";
 
 export default function Login() {
   return (
@@ -21,6 +22,7 @@ export default function Login() {
           </p>
         </div>
         <LoginForm />
+        <OtherMethodes />
       </section>
     </section>
   );

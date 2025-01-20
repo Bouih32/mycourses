@@ -2,7 +2,11 @@ import Image from "next/image";
 import logo from "@/images/logo.png";
 import avatar from "@/images/avatar.png";
 import Search from "./Search";
-import { MdKeyboardArrowDown, MdShoppingCart } from "react-icons/md";
+import {
+  MdKeyboardArrowDown,
+  MdShoppingCart,
+  MdTimelapse,
+} from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { FaBell, FaRegBell } from "react-icons/fa6";
 import Link from "next/link";
@@ -43,7 +47,7 @@ export default function Header({ logged }: HeaderProps) {
           {!logged ? (
             <div className="hidden items-center gap-4 lg:flex lg:gap-[18px]">
               <LoginButton />
-              <Button icon>Sign Up</Button>
+              <Button icon={<MdTimelapse />}>Sign Up</Button>
             </div>
           ) : (
             <div className="flex items-center gap-4 lg:gap-[18px]">

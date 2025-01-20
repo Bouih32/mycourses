@@ -1,10 +1,9 @@
 import { cn } from "@/libs/utils";
-import { ReactNode } from "react";
-import { MdTimelapse } from "react-icons/md";
+import { ReactElement, ReactNode } from "react";
 
 type ButtonProps = {
   children?: ReactNode;
-  icon?: boolean;
+  icon?: ReactElement;
   status?: "enabled" | "disabled";
   classname?: string;
 };
@@ -28,7 +27,8 @@ export default function Button({
         classname,
       )}
     >
-      {icon && <MdTimelapse />}
+      <div className="text-[21px]"> {icon ? icon : null}</div>
+
       {children}
     </div>
   );
