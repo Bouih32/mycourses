@@ -3,6 +3,7 @@ import hero from "@/images/heroImage.png";
 import Button from "./Button";
 import Image from "next/image";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
+import UserCard from "./UserCard";
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
             <GoChevronRight />
           </div>
         </div>
-        <div className="bg-main relative w-[130px] text-white md:w-[250px] laptop:w-[455px]">
+        <div className="relative w-[130px] bg-main text-white md:w-[250px] laptop:w-[455px]">
           <Image
             src={decor}
             alt="avatar"
@@ -50,17 +51,7 @@ export default function Hero() {
             className="absolute z-10 h-full w-full"
           />
           <div className="z-50 flex items-center self-end justify-self-end lg:gap-[145px] xl:gap-[161px]">
-            <div className="flex items-center gap-[15px]">
-              <Image
-                src={hero}
-                alt="avatar"
-                className="hidden rounded-full object-cover outline-double ring-2 ring-white md:block md:h-[40px] md:w-[40px] xl:h-[64px] xl:w-[64px]"
-              />
-              <div className="space-y-1 text-white">
-                <h3 className="text-10lg lg:text-16lg">Jessica Wong</h3>
-                <p className="text-8sm lg:text-14sm">Photographer</p>
-              </div>
-            </div>
+            <UserCard />
             <div className="hidden space-y-1 text-8sm text-white lg:block">
               <p className="lg:text-14sm xl:text-16sm">
                 Winner Photo 2017 Awwards
@@ -73,7 +64,7 @@ export default function Hero() {
         </div>
       </section>
       <section className="mx-auto flex items-center justify-center gap-2">
-        <div className="bg-main h-2 w-2 rounded-full"></div>
+        <div className="h-2 w-2 rounded-full bg-main"></div>
         <div className="h-1.5 w-1.5 rounded-full bg-black30"></div>
         <div className="h-1.5 w-1.5 rounded-full bg-black30"></div>
         <div className="h-1.5 w-1.5 rounded-full bg-black30"></div>
