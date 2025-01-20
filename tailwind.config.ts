@@ -181,11 +181,14 @@ export default {
         laptop: "1200px",
       },
       backgroundImage: {
+        loginGrad:
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.39) 34.31%, rgba(0, 0, 0, 0.00) 100%)",
         promoImage:
           "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.88) 100%)",
         expertGradient:
           "linear-gradient(180deg, rgba(201, 59, 59, 0.00) 39.22%, rgba(0, 0, 0, 0.50) 100%)",
         hero: "url(@/images/heroImage.png)",
+        login: "url(@/images/loginImage.png)",
       },
       colors: {
         primary: {
