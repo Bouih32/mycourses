@@ -8,6 +8,7 @@ import { FaBell, FaRegBell } from "react-icons/fa6";
 import Link from "next/link";
 import Button from "./Button";
 import Container from "./Container";
+import LoginButton from "../authUi/LoginButton";
 
 type HeaderProps = {
   logged?: boolean;
@@ -18,7 +19,7 @@ export default function Header({ logged }: HeaderProps) {
     <Container>
       <header className="flex items-center justify-between border-b border-black/5 px-4 py-[9.4px] text-16sm text-dark md:border-none lg:mb-10 lg:px-0 lg:py-[14px] xl:py-2">
         <div className="flex items-center justify-center gap-[7px] lg:gap-[16px] xl:gap-[31.41px]">
-          <IoMenu className="text-main text-[24px] font-bold lg:hidden" />
+          <IoMenu className="text-[24px] font-bold text-main lg:hidden" />
           <Image
             src={logo}
             alt="logo"
@@ -41,9 +42,7 @@ export default function Header({ logged }: HeaderProps) {
           <FaBell className="text-black60 lg:hidden" />
           {!logged ? (
             <div className="hidden items-center gap-4 lg:flex lg:gap-[18px]">
-              <Button status="enabled" classname="text-black90 border-black90 ">
-                Login
-              </Button>
+              <LoginButton />
               <Button icon>Sign Up</Button>
             </div>
           ) : (
