@@ -189,6 +189,7 @@ export default {
           "linear-gradient(180deg, rgba(201, 59, 59, 0.00) 39.22%, rgba(0, 0, 0, 0.50) 100%)",
         hero: "url(@/images/heroImage.png)",
         login: "url(@/images/loginImage.png)",
+        signup: "url(@/images/signupImage.png)",
       },
       colors: {
         primary: {

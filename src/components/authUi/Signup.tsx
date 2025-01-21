@@ -4,10 +4,10 @@ import LoginForm from "./LoginForm";
 import SideImage from "./SideImage";
 import OtherMethodes from "./OtherMethodes";
 
-export default function Login() {
+export default function Signup() {
   return (
     <section className="grid h-full w-full md:grid-cols-2">
-      <SideImage />
+      <SideImage signup />
       <section className="p-5 pt-[34px] text-16sm md:p-6">
         <div className="space-y-2">
           <Image
@@ -21,11 +21,11 @@ export default function Login() {
             Join us and get more benefits. We promise to keep your data safely.
           </p>
         </div>
-        <LoginForm />
         <OtherMethodes />
+        <LoginForm />
         <p className="mt-6 text-center text-14sm text-black60">
-          Need an Account?
-          <span className="cursor-pointer text-12lg text-main">Sign Up</span>
+          Already have an Account?
+          <span className="cursor-pointer text-12lg text-main">Login</span>
         </p>
       </section>
     </section>

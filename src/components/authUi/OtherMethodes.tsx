@@ -16,10 +16,6 @@ export default function OtherMethodes() {
           Continue with Google
         </Button>
       </div>
-      <p className="mt-6 text-14sm text-black60">
-        Need an Account?{" "}
-        <span className="cursor-pointer text-12lg text-main">Sign Up</span>
-      </p>
     </section>
   );
 }

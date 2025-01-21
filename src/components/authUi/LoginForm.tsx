@@ -43,9 +43,8 @@ export default function LoginForm() {
           error={errors.password?.message as string}
         />
       </div>
-      <button type="submit" className="w-full">
-        <Button>Login</Button>
-      </button>
+
+      <Button>Login</Button>
     </form>
   );
 }
