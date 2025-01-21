@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-import Input from "./Input";
-import Button from "../ui/Button";
+import Input from "../Input";
+import Button from "../../ui/Button";
 import { MdMailOutline, MdLock } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { loginValidation } from "@/libs/validation";
 import { zodResolver } from "@hookform/resolvers/zod";
 type loginType = z.infer<typeof loginValidation>;
-export default function LoginForm() {
+export default function SignupForm() {
   const {
     register,
     formState: { errors },
@@ -43,8 +43,9 @@ export default function LoginForm() {
           error={errors.password?.message as string}
         />
       </div>
-
-      <Button>Login</Button>
+      <button type="submit" className="w-full">
+        <Button>Create Account</Button>
+      </button>
     </form>
   );
 }

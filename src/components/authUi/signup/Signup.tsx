@@ -1,12 +1,12 @@
 import Image from "next/image";
 import logo from "@/images/logo.png";
-import LoginForm from "./LoginForm";
-import SideImage from "./SideImage";
-import OtherMethodes from "./OtherMethodes";
+import SideImage from "../SideImage";
+import OtherMethodes from "../OtherMethodes";
+import SignupForm from "./SignupForm";
 
 export default function Signup() {
   return (
-    <section className="grid h-full w-full md:grid-cols-2">
+    <section className="grid h-full w-full md:w-[800px] md:grid-cols-2">
       <SideImage signup />
       <section className="p-5 pt-[34px] text-16sm md:p-6">
         <div className="space-y-2">
@@ -22,7 +22,7 @@ export default function Signup() {
           </p>
         </div>
         <OtherMethodes />
-        <LoginForm />
+        <SignupForm />
         <p className="mt-6 text-center text-14sm text-black60">
           Already have an Account?
           <span className="cursor-pointer text-12lg text-main">Login</span>

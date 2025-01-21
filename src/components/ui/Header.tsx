@@ -8,8 +8,8 @@ import { FaBell, FaRegBell } from "react-icons/fa6";
 import Link from "next/link";
 
 import Container from "./Container";
-import LoginButton from "../authUi/LoginButton";
-import SignupButton from "../authUi/SignupButton";
+import LoginButton from "../authUi/login/LoginButton";
+import SignupButton from "../authUi/signup/SignupButton";
 
 type HeaderProps = {
   logged?: boolean;

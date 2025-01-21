@@ -1,12 +1,13 @@
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 import {
   Dialog,
   DialogContent,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Signup from "./Signup";
+// import Signup from "./Signup";
 import { MdTimelapse } from "react-icons/md";
+import PickCategory from "../pickcategory/PickCategory";
 
 export default function SignupButton() {
   return (
@@ -16,7 +17,8 @@ export default function SignupButton() {
       </DialogTrigger>
       <DialogContent>
         <DialogTitle className="sr-only">Signup modal</DialogTitle>
-        <Signup />
+        <PickCategory />
+        {/* <Signup /> */}
       </DialogContent>
     </Dialog>
   );

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import LoginForm from "./LoginForm";
-import SideImage from "./SideImage";
-import OtherMethodes from "./OtherMethodes";
+import SideImage from "../SideImage";
+import OtherMethodes from "../OtherMethodes";
 
 export default function Login() {
   return (
-    <section className="grid h-full w-full md:grid-cols-2">
+    <section className="grid h-full w-full md:w-[800px] md:grid-cols-2">
       <SideImage />
       <section className="p-5 pt-[34px] text-16sm md:p-6">
         <div className="space-y-2">
