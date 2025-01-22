@@ -10,13 +10,11 @@ export default function PickCategory() {
   const handleSelect = (ele: number) => {
     setSelected((prev) => {
       if (prev.includes(ele)) {
-        // If the element is already selected, remove it
         return prev.filter((cat) => cat !== ele);
       } else if (prev.length < 3) {
-        // If the length is less than 3, add the element
         return [...prev, ele];
       }
-      // Otherwise, return the previous state (no changes)
+
       return prev;
     });
 

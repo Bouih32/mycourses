@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import SignupContext from "@/contexts/SignupContext";
 
 const gilroy = localFont({
   src: [
@@ -35,8 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${gilroy.variable} antialiased`}>
-        <Header />
+        <SignupContext>
+          <Header />
+        </SignupContext>
         {children}
+
         <Footer />
       </body>
     </html>
