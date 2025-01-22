@@ -24,6 +24,7 @@ export default function CategoryCard({
       className={cn(
         "before:bg-categoryGrad relative h-[122px] w-[160px] cursor-pointer overflow-hidden rounded-[3px] border-main transition-all duration-75 ease-in before:absolute before:bottom-0 before:left-0 before:h-full before:w-full hover:border-[2px] md:h-[140px] md:w-[211px] xl:w-[184px]",
         isSelected && "border-[2px]",
+        { "pointer-events-none": !isSelected && selcted.length == 3 },
       )}
     >
       <Image
