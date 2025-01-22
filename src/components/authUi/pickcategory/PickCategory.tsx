@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import CategoryCard from "./CategoryCard";
 
 export default function PickCategory() {
   return (
@@ -6,6 +7,9 @@ export default function PickCategory() {
       <p className="text-center text-16lg md:text-20lg">
         Pick 3 categories you want to explore
       </p>
+      <section className="">
+        <CategoryCard />
+      </section>
       <Button>Done</Button>
     </section>
   );

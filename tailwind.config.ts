@@ -181,6 +181,8 @@ export default {
         laptop: "1200px",
       },
       backgroundImage: {
+        categoryGrad:
+          "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 58.63%, rgba(0, 0, 0, 0.53) 100%)",
         loginGrad:
           "linear-gradient(0deg, rgba(0, 0, 0, 0.39) 34.31%, rgba(0, 0, 0, 0.00) 100%)",
         promoImage:
