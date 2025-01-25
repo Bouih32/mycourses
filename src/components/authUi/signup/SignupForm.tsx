@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import Input from "../Input";
 import Button from "../../ui/Button";
 import { MdMailOutline, MdLock } from "react-icons/md";
@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { loginValidation } from "@/libs/validation";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { SignupManager } from "@/contexts/SignupContext";
 type loginType = z.infer<typeof loginValidation>;
 export default function SignupForm() {
   const {
@@ -17,11 +18,17 @@ export default function SignupForm() {
     trigger,
   } = useForm<loginType>({ resolver: zodResolver(loginValidation) });
 
+  const context = useContext(SignupManager);
+  if (!context) return;
+
+  const { handleNextStep } = context;
+
   const handleSubmit = async () => {
     const result = await trigger();
     if (!result) return;
     const formData = getValues();
     console.log(formData);
+    handleNextStep();
   };
   return (
     <form className="mt-6" action={handleSubmit}>
