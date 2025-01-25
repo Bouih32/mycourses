@@ -28,7 +28,7 @@ export default function SignupForm() {
     if (!result) return;
     const formData = getValues();
     console.log(formData);
-    handleNextStep();
+    handleNextStep(formData);
   };
   return (
     <form className="mt-6" action={handleSubmit}>

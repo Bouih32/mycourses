@@ -10,3 +10,9 @@ export type InstructorType = {
   name: string;
   job: string;
 };
+
+export type SignupDataT = {
+  email: string;
+  password: string;
+  // categories: number[];
+};

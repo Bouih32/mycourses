@@ -17,8 +17,6 @@ export default function PickCategory() {
 
       return prev;
     });
-
-    console.log(selcted);
   };
 
   return (
