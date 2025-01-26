@@ -14,5 +14,5 @@ export type InstructorType = {
 export type SignupDataT = {
   email: string;
   password: string;
-  // categories: number[];
+  categories?: number[];
 };

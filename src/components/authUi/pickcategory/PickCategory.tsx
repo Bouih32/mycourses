@@ -3,10 +3,23 @@
 import Button from "@/components/ui/Button";
 import CategoryCard from "./CategoryCard";
 import { nanoid } from "nanoid";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { SignupManager } from "@/contexts/SignupContext";
 
 export default function PickCategory() {
   const [selcted, setSelected] = useState<number[]>([]);
+  const context = useContext(SignupManager);
+  if (!context) return null;
+  const { handleSignup } = context;
+
+  const onSignup = () => {
+    if (selcted.length !== 3) {
+      console.log("khwawi");
+      return;
+    }
+    handleSignup(selcted);
+  };
+
   const handleSelect = (ele: number) => {
     setSelected((prev) => {
       if (prev.includes(ele)) {
@@ -34,7 +47,12 @@ export default function PickCategory() {
           />
         ))}
       </section>
-      <Button classname="xl:w-[386px] md:w-[288px] w-full mx-auto">Done</Button>
+
+      <Button classname="xl:w-[386px] md:w-[288px] w-full mx-auto">
+        <button className="h-full w-full" onClick={onSignup}>
+          Done
+        </button>
+      </Button>
     </section>
   );
 }
