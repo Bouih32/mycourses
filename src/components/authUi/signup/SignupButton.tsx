@@ -18,7 +18,6 @@ export default function SignupButton() {
       <DialogContent>
         <DialogTitle className="sr-only">Signup modal</DialogTitle>
         <SignupHolder />
-        {/* <Signup /> */}
       </DialogContent>
     </Dialog>
   );
